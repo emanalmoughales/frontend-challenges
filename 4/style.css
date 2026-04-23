@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    height: fit-content;
+    padding: 5rem;
+    color: hsl(30, 10%, 34%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.8rem;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: black;
+}
+
+.details {
+    margin: 1rem 0;
+}
+
+.preparation_container {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.preparation_title {
+    font-weight: bold;
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 1rem;
+}
+
+.preparation_list {
+    font-size: 16px;
+    margin-left: 1.5rem;
+}
+
+.preparation_list li {
+    margin-bottom: 0.8rem;
+}
+
+.preparation_list li::marker {
+    font-size: 12px;
+    color: hsl(332, 51%, 32%);
+}
+
+li::before {
+    content: "";
+    margin-right: 1rem;
+    min-width: 20px;
+}
+
+.preparation_list li>span {
+    font-weight: 700;
+}
+
+.Ingredients_container {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.21);
+}
+
+.Ingredients_title {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
+}
+
+.Ingredients_list {
+    font-size: 16px;
+    margin-left: 1.5rem;
+    list-style: square;
+}
+
+.Ingredients_list li {
+    margin-bottom: 0.8rem;
+}
+
+.Ingredients_list li::marker {
+    font-size: 12px;
+    color: hsl(14, 45%, 36%);
+}
+
+.Instructions_container {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.21);
+}
+
+.Instructions_title {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.Instructions_list {
+    font-size: 16px;
+    padding-left: 1.5rem;
+}
+
+.Instructions_list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    text-indent: -1rem;
+}
+
+.Instructions_list li>span {
+    font-weight: 700;
+}
+
+.Instructions_list li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.footer_title {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.8rem;
+    padding-left: 2rem;
+}
+
+tr:not(:last-child) td {
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.21);
+}
+
+.value {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
