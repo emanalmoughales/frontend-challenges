@@ -103,6 +103,7 @@ li::before {
 
 .Ingredients_list li {
     margin-bottom: 0.8rem;
+    text-indent: -1rem;
 }
 
 .Ingredients_list li::marker {
@@ -179,4 +180,17 @@ tr:not(:last-child) td {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 0;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+    .card {
+        font-size: 18px;
+    }
 }
