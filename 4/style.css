@@ -187,10 +187,3 @@ tr:not(:last-child) td {
         padding: 0;
     }
 }
-
-/* Desktop */
-@media (min-width: 1440px) {
-    .card {
-        font-size: 18px;
-    }
-}
