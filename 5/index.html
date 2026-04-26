@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+
+      <picture>
+        <source srcset="./images/image-product-desktop.jpg" media="(min-width: 90em) " />
+        <source srcset="./images/image-product-mobile.jpg" media="(max-width: 23.4375em) " />
+        <img src="./images/image-product-desktop.jpg" alt="" class="side_image" />
+      </picture>
+
+      <aside class="details">
+        <header>
+          <span class="product_type">Perfume</span>
+          <h1 class="perfume_name">Gabrielle Essence Eau De Parfum</h1>
+        </header>
+        <main>
+          <p class="description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+        </main>
+        <footer>
+          <div class="price">
+            <h1 class="after">$149.99</h1>
+            <span class="before">$169.99</span>
+          </div>
+
+          <button type="submit" class="cart_button">
+            <img src="./images/icon-cart.svg" alt="" class="cart_icon" />
+            Add to Cart
+          </button>
+        </footer>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/emanalmoughales/frontend-challenges">Eman</a>.
+  </footer>
+</body>
+
+</html>
