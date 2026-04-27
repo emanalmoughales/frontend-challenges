@@ -1,0 +1,106 @@
+html {
+    font-size: clamp(10px, 12px + 0.3vw, 16px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: hsl(234, 12%, 34%);
+    padding: 2rem;
+}
+
+.body_header {
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 36rem;
+    margin-bottom: 2.5rem;
+}
+
+.light_title {
+    font-weight: 200;
+    color: hsl(212, 6%, 44%);
+}
+
+.bold_title {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.details {
+    text-align: center;
+    color: hsl(212, 6%, 44%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.features_container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 25rem;
+    border-top: 4px solid;
+    padding: 1rem 2rem;
+    padding-bottom: 3rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 4px 12px 0 hsla(234, 12%, 34%, 0.292);
+    border-radius: 6px;
+}
+
+.content {
+    color: hsl(212, 6%, 44%);
+}
+
+.icon {
+    align-self: end;
+    width: 3rem;
+    margin-top: 1.5rem;
+}
+
+#Supervisor_container {
+    border-color: hsl(180, 62%, 55%);
+}
+
+#builder_container {
+    border-color: hsl(0, 78%, 62%);
+}
+
+#karma_container {
+    border-color: hsl(34, 97%, 64%);
+}
+
+#calculator_container {
+    border-color: hsl(212, 86%, 64%);
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:29.1875em) {
+    .features_container {
+        grid-template-columns: 1fr;
+    }
+}
