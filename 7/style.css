@@ -1,0 +1,186 @@
+ html {
+     font-size: clamp(10px, 13px + 0.3vw, 16px);
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     padding: 1rem;
+ }
+
+ .grid_container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-areas:
+         "purple purple gray long_white"
+         "short_white black black long_white";
+     justify-content: center;
+     grid-gap: 2rem;
+     padding: 4rem;
+     padding-bottom: 1rem;
+ }
+
+ .grid_container>div {
+     padding: 2.6rem;
+     border-radius: 10px;
+     box-shadow: 20px 8px 40px 10px hsla(234, 12%, 34%, 0.292);
+ }
+
+ .grid_container>div>header {
+     display: flex;
+     gap: 1rem;
+     align-items: center;
+     margin-bottom: 1rem;
+ }
+
+ .grid_container>div>header>img {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+ }
+
+ .Purple {
+     grid-area: purple;
+     background-color: hsl(263, 55%, 52%);
+     color: hsl(0, 0%, 100%);
+     background-image: url("./images/bg-pattern-quotation.svg");
+     background-repeat: no-repeat;
+     background-position: right 15% top;
+     background-size: 8.3rem;
+ }
+
+ .Purple_border {
+     border: 2px solid hsl(264, 82%, 80%);
+ }
+
+ .Purple>header>div>h3 {
+     color: hsl(260, 100%, 95%);
+     margin-bottom: 0.2rem;
+ }
+
+ .Purple>header>div>h4 {
+     color: hsl(264, 82%, 80%);
+ }
+
+ .Purple>p {
+     color: hsl(260, 100%, 95%);
+     margin-top: 1rem;
+ }
+
+ .gray {
+     grid-area: gray;
+     background-color: hsl(217, 19%, 35%);
+     color: hsl(0, 0%, 100%);
+ }
+
+ .gray>header>div>h3 {
+     color: hsl(214, 17%, 92%);
+     margin-bottom: 0.2rem;
+ }
+
+ .gray>header>div>h4 {
+     color: hsl(0, 0%, 81%);
+ }
+
+ .gray>p {
+     color: hsl(0, 0%, 81%);
+     margin-top: 1rem;
+ }
+
+ .long_white {
+     grid-area: long_white;
+
+ }
+
+ .white>header>div>h3 {
+     color: hsl(217, 19%, 35%);
+     margin-bottom: 0.2rem;
+ }
+
+ .white>header>div>h4 {
+     color: hsl(224, 10%, 45%);
+ }
+
+ .white>h2 {
+     color: hsl(217, 19%, 35%);
+     margin-bottom: 1rem;
+ }
+
+ .white>p {
+     color: hsl(224, 10%, 45%);
+ }
+
+ .short_white {
+     grid-area: short_white;
+ }
+
+ .black {
+     grid-area: black;
+     background-color: hsl(219, 29%, 14%);
+     color: hsl(214, 17%, 92%);
+ }
+
+ .black>header>div>h3 {
+     color: hsl(214, 17%, 92%);
+     margin-bottom: 0.2rem;
+ }
+
+ .black>header>div>h4 {
+     color: hsl(0, 0%, 81%);
+ }
+
+ .black>p {
+     color: hsl(0, 0%, 81%);
+     margin-top: 1rem;
+ }
+
+ .attribution {
+     font-size: 0.6875rem;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ @media (max-width: 56.25em) {
+     .grid_container {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-areas:
+             "purple black"
+             "short_white gray"
+             "long_white long_white";
+     }
+ }
+
+ @media (max-width: 29.1875em) {
+     .grid_container {
+         grid-template-columns: 1fr;
+         grid-template-areas:
+             "purple"
+             "gray"
+             "short_white"
+             "black"
+             "long_white";
+         padding: 2rem;
+     }
+
+     .grid_container>div {
+         padding: 2.3rem;
+         border-radius: 10px;
+         box-shadow: 20px 11px 40px 10px hsla(234, 12%, 34%, 0.292);
+     }
+
+     .Purple {
+         background-image: none
+     }
+ }
