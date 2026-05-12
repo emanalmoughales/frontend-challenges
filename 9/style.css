@@ -1,0 +1,262 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     font-size: clamp(0.6rem, 0.658rem + 0.3vw, 1rem);
+ }
+
+ body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 2rem;
+     background-color: hsl(235, 18%, 26%);
+     min-height: 100vh;
+     font-size: 16px;
+     font-family: 'Roboto', sans-serif;
+     color: hsl(235, 18%, 26%);
+ }
+
+ .container {
+     background-color: hsl(0, 0%, 100%);
+     padding: 1rem;
+     display: flex;
+     border-radius: 20px;
+ }
+
+ .container.hidden {
+     display: none;
+ }
+
+ .right_side,
+ .left_side {
+     flex: 1 1 50%;
+ }
+
+ .right_side {
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+     padding: 2rem;
+ }
+
+ .title {
+     font-weight: 700;
+     color: hsl(234, 29%, 20%);
+ }
+
+ .details {
+     margin: 1.2rem 0;
+ }
+
+ .list {
+     list-style: none;
+ }
+
+ .list_items {
+     margin-bottom: 0.8rem;
+     display: flex;
+     align-items: end;
+ }
+
+ .list_items::before {
+     content: '';
+     height: 20px;
+     width: 20px;
+     display: inline-block;
+     background-image: url(./assets/images/icon-list.svg);
+     background-repeat: no-repeat;
+     background-size: 1.125rem;
+     margin-right: 0.5rem;
+     background-origin: content-box;
+ }
+
+ .email_form {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+ }
+
+ .email_lable {
+     font-weight: 700;
+     font-size: 0.8rem;
+     color: hsl(234, 29%, 20%);
+     margin-bottom: -.5rem;
+ }
+
+ .email_lable.error::after {
+     content: 'Valid email required';
+     color: hsl(4, 100%, 67%);
+     margin-left: 9rem;
+ }
+
+ .email_input {
+     padding: 1rem;
+     border-radius: 10px;
+     border: 1px solid hsl(0, 0%, 58%);
+     cursor: pointer;
+ }
+
+ .email_input.error {
+     border: 1px solid hsl(4, 100%, 67%);
+     background-color: hsla(4, 100%, 67%, 0.119);
+     color: hsl(4, 100%, 67%);
+ }
+
+ .email_input:focus {
+     border: 2px solid hsl(235, 18%, 26%);
+     outline: none;
+ }
+
+ .submit_button {
+     padding: 1rem;
+     border-radius: 10px;
+     background-color: hsl(234, 29%, 20%);
+     border: 1px solid hsl(234, 29%, 20%);
+     color: white;
+     font-weight: 700;
+     cursor: pointer;
+ }
+
+ .submit_button:hover {
+     background: linear-gradient(to right, #ff4f7b, #ff6a3d);
+     box-shadow: -1px 10px 20px 0px hsla(4, 100%, 67%, 0.566);
+     border: none;
+ }
+
+ .left_side {
+     border-radius: 20px;
+     overflow: hidden;
+     height: 30rem;
+ }
+
+ .card_img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .success_message {
+     display: none;
+ }
+
+ .success_message.active {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+     background-color: hsl(0, 0%, 100%);
+     padding: 2.5rem;
+     border-radius: 20px;
+     width: 20rem;
+ }
+
+ .message_container {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+ }
+
+ .message_title {
+     font-size: 2rem;
+ }
+
+ .icon {
+     align-self: self-start;
+     height: 3rem;
+     width: 3rem;
+     margin-top: -1rem;
+ }
+
+ .message {
+     font-size: .8rem;
+ }
+
+ .userEmail {
+     font-weight: 700;
+ }
+
+ .Dismiss_button {
+     padding: 1rem;
+     border-radius: 10px;
+     background-color: hsl(234, 29%, 20%);
+     border: 1px solid hsl(234, 29%, 20%);
+     color: white;
+     font-weight: 700;
+     cursor: pointer;
+ }
+
+ .Dismiss_button:hover {
+     background: linear-gradient(to right, #ff4f7b, #ff6a3d);
+     box-shadow: -1px 10px 20px 0px hsla(4, 100%, 67%, 0.566);
+     border: none;
+ }
+
+ .attribution {
+     font-size: 0.6875rem;
+     text-align: center;
+     margin-top: 2rem;
+     color: white;
+ }
+
+ .attribution a {
+     color: hsl(228, 49%, 74%);
+ }
+
+ @media (max-width: 23.4375em) {
+     body {
+         padding: 0;
+     }
+
+     .container {
+         flex-direction: column;
+         padding: 0;
+         border-radius: 0%;
+         height: 100vh;
+     }
+
+     .right_side {
+         order: 1;
+         border-radius: 0;
+     }
+
+     .left_side {
+         border-radius: 0 0 10px 10px;
+     }
+
+     .success_message.active {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         height: 100vh;
+         width: 100vw;
+         padding: 15rem 1.5rem 2rem;
+         border-radius: 0;
+     }
+
+     .message_container {
+         display: flex;
+         flex-direction: column;
+         gap: 1.5rem;
+     }
+
+     .icon {
+         height: 3.5rem;
+         width: 3.5rem;
+     }
+
+     .message {
+         font-size: 1.2rem;
+     }
+
+     .Dismiss_button {
+         width: 100%;
+     }
+
+     .attribution {
+         display: none;
+     }
+ }
