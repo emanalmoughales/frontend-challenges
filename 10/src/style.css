@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+    /* Primary */
+    --color-Purple-primary: hsl(246, 80%, 60%);
+    --color-Orange-work: hsl(15, 100%, 70%);
+    --color-Blue-play: hsl(195, 74%, 62%);
+    --color-Pink-study: hsl(348, 100%, 68%);
+    --color-Green-exercise: hsl(145, 58%, 55%);
+    --color-Purple-social: hsl(264, 64%, 52%);
+    --color-Yellow-selfCare: hsl(43, 84%, 65%);
+    --color-Royal-Blue-Purple: rgb(51, 58, 123);
+    /* Neutral */
+    --color-Navy-1: hsl(226, 43%, 10%);
+    --color-Navy-2: hsl(235, 46%, 20%);
+    --color-Purple-secondary: hsl(235, 45%, 61%);
+    --color-Navy-3: hsl(236, 100%, 87%);
+
+    --font-display: 'Rubik', sans-serif;
+}

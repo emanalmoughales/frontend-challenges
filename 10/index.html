@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="text-[clamp(0.7rem,0.658rem+0.5vw,1.125rem)]">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <script defer src="./main.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body class="min-h-screen bg-slate-950 flex flex-col justify-center items-center gap-5 font-display text-white p-5">
+  <div class="flex flex-col md:flex-row  md:w-245 w-full gap-6">
+    <main class="bg-Navy-2 rounded-2xl md:w-fit w-full">
+      <div class="bg-Purple-primary flex flex-row md:flex-col p-6 md:pr-20 md:pb-18 gap-5 rounded-2xl">
+        <img src="./images/image-jeremy.png" alt="jeremy_image" class="rounded-full border-4 border-white h-20 w-20 mb-3">
+        <div>
+          <h6 class="text-Navy-3"> Report for</h6>
+          <h2 class="text-white text-[1.8rem] font-light md:w-30 w-full">Jeremy Robson</h2>
+        </div>
+      </div>
+      <ul class="text-Navy-3/60 px-10 py-4 flex flex-row justify-between md:flex-col gap-3">
+        <li><button class="DailyBtn cursor-pointer">Daily</button></li>
+        <li><button class="WeeklyBtn text-Navy-3 cursor-pointer">Weekly</button> </li>
+        <li><button class="MonthlyBtn cursor-pointer">Monthly</button></li>
+      </ul>
+    </main>
+    <aside class="flex-1 grid md:grid-cols-3 gap-6 sm:grid-cols-2" id="container">
+    </aside>
+  </div>
+  <footer class="text-xs text-center justify-self-end">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/emanalmoughales/frontend-challenges" class="text-Navy-3">Eman</a>.
+  </footer>
+</body>
+
+</html>
